@@ -11,10 +11,10 @@ export class User {
 
     @Column()
     age: number;
-
+    
     @Column({ nullable: true, unique: true })
     email: string;
 
     @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
     createdAt: Date;
-}
+}   
